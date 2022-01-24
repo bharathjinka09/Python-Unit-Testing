@@ -1,6 +1,8 @@
 
 def add(x, y):
     """Add Function"""
+    if(type(x) not in [int,float] or type(y) not in [int,float]):
+        raise ValueError("Value should be int or float")
     return x + y
 
 
